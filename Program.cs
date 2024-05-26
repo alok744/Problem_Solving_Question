@@ -1,31 +1,21 @@
 ﻿using System;
 
-namespace Leap_year
+namespace print_number
 {
     class program
     {
-      
+
         public static void Main(string[] args)
         {
-           
-            Console.Write("Enter the year : ");
 
+            Console.Write("Enter the Number : ");
             int n=int.Parse(Console.ReadLine());
-            bool n1;
-            bool n2;
 
-            if (n % 4 == 0)
+            for (int i = 1; i < n; i++)
             {
-                n1=true;
-                Console.WriteLine(n1);
-                Console.WriteLine("Leap Year");
+                Console.Write(i);
             }
-            else
-            {
-                n2 = false;
-                Console.WriteLine(n2);
-                Console.WriteLine("Not A Leap Year");
-            }
+            
         }
     }
 }
